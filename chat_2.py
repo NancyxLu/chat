@@ -38,19 +38,12 @@ def assemble(contant):
 
 def Save_it(filename, result):
 	with open(filename, 'w', encoding = 'utf-8-sig') as f:
-		f.write('{},{},{}\n'.format('allen說了', result[0], '句話'))
-		f.write('{},{},{}\n'.format('allen傳了', result[1], '個貼圖'))
-		f.write('{},{},{}\n'.format('allen傳了', result[2], '張圖片'))
-		f.write('{},{},{}\n'.format('viki說了', result[3], '句話')) 
-		f.write('{},{},{}\n'.format('viki說了', result[4], '個貼圖'))
-		f.write('{},{},{}\n'.format('viki說了', result[5], '張圖片'))
-
-		# f.write('{},{},{}\n'.format('allen說了', result[0], '句話'))
-		# f.write('{},{},{}\n'.format('allen傳了', result[1], '個貼圖'))
-		# f.write('{},{},{}\n'.format('allen傳了', result[2], '張圖片'))
-		# f.write('{},{},{}\n'.format('viki說了', result[3], '句話')) 
-		# f.write('{},{},{}\n'.format('viki說了', result[4], '個貼圖'))
-		# f.write('{},{},{}\n'.format('viki說了', result[5], '張圖片'))
+		f.write('{}{}{}\n'.format('allen說了', result[0], '句話'))
+		f.write('{}{}{}\n'.format('allen傳了', result[1], '個貼圖'))
+		f.write('{}{}{}\n'.format('allen傳了', result[2], '張圖片'))
+		f.write('{}{}{}\n'.format('viki說了', result[3], '句話')) 
+		f.write('{}{}{}\n'.format('viki說了', result[4], '個貼圖'))
+		f.write('{}{}{}\n'.format('viki說了', result[5], '張圖片'))
 
 def main():
 	contant = read_file('LINE-Viki.txt')
